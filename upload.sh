@@ -5,7 +5,7 @@ git stash
 git pull origin master --tags
 git stash pop
 
-VersionString=`grep -E 's.version.*=' YYYRefresh.podspec`
+VersionString=`grep -E 's.version.*=' YYModel.podspec`
 VersionString=${VersionString##*=}
 VersionNumber=`tr -d "'" <<<"$VersionString"`
 echo "current version is ${VersionNumber}"
